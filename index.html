@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Expense Manager</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Expense Manager</h1>
+  </header>
+
+  <main>
+    <section id="salary-management">
+      <h2>Salary Management</h2>
+      <form id="salary-management-form">
+        <label for="salary-input">Enter your salary:</label>
+        <input type="number" id="salary-input" required>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="expense-division" style="display: none;">
+      <h2>Expense Division</h2>
+      <form id="expense-division-form">
+        <label for="expense-input">Expense Title:</label>
+        <input type="text" id="expense-input" required>
+        <label for="amount-input">Amount:</label>
+        <input type="number" id="amount-input" step="0.01" required>
+        <button type="submit">Add Expense</button>
+        <button type="reset" id="reset-button">Reset</button>
+      </form>
+
+      <div id="expense-list-container">
+        <h3>Expenses:</h3>
+        <ul id="expense-list"></ul>
+      </div>
+
+      <div id="remaining-salary-container">
+        <h3>Remaining Salary:</h3>
+        <p id="remaining-salary">$0.00</p>
+      </div>
+
+      <p id="fully-utilized" style="display: none;">All salary has been utilized.</p>
+    </section>
+  </main>
+   <footer>
+      <p id="hoursWorkedText">&copy; Expense Manager by  <a href="https://www.linkedin.com/in/vrajesh-thaker-1886731bb/">Vrajesh</a></p>
+    </footer>
+    </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
